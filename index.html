@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="/fonts/ProximaNova-Regular.woff" rel="stylesheet">
+    <link href="/fonts/AvenirNextCyr-Medium.woff" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+        <form action="">
+            <div class="location-container container">
+                <p class="title">Место или название отеля</p>
+                <input type="text" placeholder="Введите здесь место" class="location-container__input">
+            </div>
+            <div class="border location-border"></div>
+            <div class="date-container container">
+                <div class="check-in">
+                    <p class="title">Заезд</p>
+                    <input type="date" class="date-container__input">
+                </div>
+                <span class="dot">&#8226</span>
+                <div class="check-out">
+                    <p class="title">Выезд</p>
+                    <input type="date" class="date-container__input">
+                </div><!-- end check-out -->
+                <div class="border"></div>
+            </div> <!-- end date -->
+            
+            <div class="select-container container">
+                <div class="item">
+                    <label for="numbers" class="title">Номера</label>
+                    <div class="numbers">
+                        <div class="field field__numbers" value="1">1</div>
+                        <div class="buttons-container">
+                            <div class="up up__numbers">
+                                <button type="button" class="arrow-up"></button>
+                            </div>
+                            <div class="down down__numbers">
+                                <button type="button" class="arrow-down"></button>
+                            </div>
+                        </div>
+                        
+                        <!-- <input class="numbers__input" type="number" min="0" max="20" value="1"> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <label for="adults" class="title">Взрослые</label>
+                    <div class="adults">
+                        <div class="field field__adults" value="1">1</div>
+                        <div class="buttons-container">
+                            <div class="up up__adults">
+                                <button type="button" class="arrow-up"></button>
+                            </div>
+                            <div class="down down__adults">
+                                <button type="button" class="arrow-down"></button>
+                            </div>
+                        </div>
+                       
+                        <!-- <input class="adults__input" type="number" min="0" max="20" value="1"> -->
+                    </div>
+                </div>
+               <div class="item">
+                    <label for="children" class="title">Дети</label>
+                    <div class="children">
+                        <div class="field field__children" value="1">0</div>
+                        <div class="buttons-container">
+                            <div class="up up__children">
+                                <button type="button" class="arrow-up"></button>
+                            </div>
+                            <div class="down down__children">
+                                <button type="button" class="arrow-down"></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div><!-- end select-container -->
+            <button class="btn" type="button"></button>
+            <button type="submit">Найти</button>
+        </form>
+        
+    </div><!-- end id wrapper -->
+    
+</body>
+</html>
+
+
